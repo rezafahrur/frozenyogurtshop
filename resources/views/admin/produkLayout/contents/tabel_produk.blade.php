@@ -1,5 +1,5 @@
 
-    <!-- Data buku -->
+    <!-- Data produk -->
     <div id="dataTabelProduk" class="col-md-6">
         <div class="box box-primary box-solid collapsed-box">
             <div class="box-header with-border">
@@ -29,7 +29,13 @@
                 <tr>
                     <td> {{$noProduk++}} </td>
                     <td> {{$dataProduk->nama_produk}} </td>
-                    <td> {{$dataProduk->id_kategori}}</td>
+                    <td> 
+                      @foreach ($dataKategoris as $dataKategori)
+                          @if ($dataProduk->id_kategori == $dataKategori->id)
+                              {{$dataKategori->nama_kategori}}
+                          @endif
+                      @endforeach
+                    </td>
                     <td>  
                       <a href="produk/{{$dataProduk->id}}">
                         <button type="button" class="btn btn-info">Detail</button>

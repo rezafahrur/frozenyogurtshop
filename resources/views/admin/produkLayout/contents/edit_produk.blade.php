@@ -6,7 +6,12 @@
           <h4 class="modal-title">Ubah Data Produk {{$editProduk->nama_produk}} </h4>
         </div>
         <div class="modal-body">
-        <form action="produk/{{$editProduk->id}}" method="post" class="form-horizontal">
+            <div class="box box-primary">
+                <div class="box-body box-profile">
+                  <img class="profile-user-img img-responsive img-circle" src="{{ asset("storage/imagesUpload/$editProduk->image")}}" alt="User profile picture">
+                </div>
+            </div>
+        <form action="produk/{{$editProduk->id}}" method="post" class="form-horizontal" enctype="multipart/form-data">
            @csrf
            <input type="hidden" name="jenisForm" value="produk">
           <div class="form-group">
@@ -16,11 +21,11 @@
             </div>
           </div>
           <div class="form-group">
-            <label for="editJudulBuku" class="col-sm-2 control-label">Gambar</label>
-            <div class="col-sm-10">
-            <input type="text" name="Gambar" class="form-control" id="editJudulBuku" value="Gambar">
+              <label for="editGambar" class="col-sm-2 control-label">Gambar</label>
+              <div class="col-sm-10">
+                <input type="file" name="editImage" class="form-control" id="editGambar">
+              </div>
             </div>
-          </div>
           <div class="form-group">
               <label for="editKategori" class="col-sm-2 control-label">Kategori</label>
               <div class="col-sm-8">

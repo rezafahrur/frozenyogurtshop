@@ -18,6 +18,7 @@
                 <tr>
                     <th>No.</th>
                     <th>Nama Kategori</th>
+                    <th>Detail</th>
                     <th>Pilihan</th>
                   </tr>
             </thead>
@@ -26,6 +27,7 @@
                 <tr>
                     <td> {{$noKategori++}} </td>
                     <td> {{$dataKategori->nama_kategori}} </td>
+                    <td>{!! $dataKategori->detail_kategori !!}</td>
                     <td> 
                         <a href="produk/{{ $detail = "kategori" }}/{{$dataKategori->id}}/edit">
                             <button type="button" class="btn btn-warning">Ubah</button>

@@ -12,7 +12,7 @@
 
       <h3 class="profile-username text-center"> {{$detailProduk->nama_produk}}</h3>
 
-      <p class="text-muted text-center">Kategori - {{$detailProduk->nama_kategori}} </p>
+      <p class="text-muted text-center">Kategori - {{$detailProduk->namaKategori}} </p>
       <!--
       <ul class="list-group list-group-unbordered">
           
