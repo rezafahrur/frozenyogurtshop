@@ -27,7 +27,7 @@
                 <tr>
                     <td> {{$noKategori++}} </td>
                     <td> {{$dataKategori->nama_kategori}} </td>
-                    <td>{!! $dataKategori->detail_kategori !!}</td>
+                    <td>{!! PotongString::potong($dataKategori->detail_kategori, 130) !!}</td>
                     <td> 
                         <a href="produk/{{ $detail = "kategori" }}/{{$dataKategori->id}}/edit">
                             <button type="button" class="btn btn-warning">Ubah</button>

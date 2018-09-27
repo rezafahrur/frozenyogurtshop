@@ -38,7 +38,7 @@ $("#closeBlog").click(function () {
   $.amaran({
       'theme': 'colorful',
       'content': {
-          bgcolor: '#3B87B3',
+          bgcolor: '#039E58',
           color: '#fff',
           message: '<b>Data Blog ditutup</b><br> refresh halaman jika ingin melihat kembali'
       },
