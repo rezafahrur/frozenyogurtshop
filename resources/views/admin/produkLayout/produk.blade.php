@@ -1,13 +1,16 @@
 @extends('admin.layouts.appLayout')
 
 @section('pageTitle')
-    @include('admin.produkLayout.pageTitle')
+<title>Kelola Produk | FROZEN YOGURT SHOP</title>
 @endsection
 
 @section('sideBar')
     @include('admin.produkLayout.sideBar')
 @endsection
 
+@section('contentTitle')
+    Kelola Produk
+@endsection
 @section('content')
     @include('admin.produkLayout.content')
 @endsection

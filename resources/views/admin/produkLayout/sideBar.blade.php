@@ -3,7 +3,7 @@
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">NAVIGASI SISTEM</li>
         <li>
-          <a href="#">
+          <a href="blog">
               <i class="fas fa-pen-alt"></i>
               <span>Blog</span>
           </a>

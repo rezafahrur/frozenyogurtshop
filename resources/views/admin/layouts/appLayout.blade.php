@@ -26,7 +26,7 @@
             <!-- Content Header (Page header) -->
             <section class="content-header blur">
                 <h1>
-                    @yield('pageTitle')
+                    @yield('contentTitle')
                 </h1>
             </section>
 

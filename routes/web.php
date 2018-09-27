@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('website/produkWebLayout/produkWeb');
 });
 
 Route::get('/admin/produk', 'ProdukController@index')->name('produk');
@@ -22,3 +22,5 @@ Route::get('/admin/produk/{detail}/{id}/edit', 'ProdukController@edit');
 Route::get('/admin/produk/{detail}/{id}/konfirmasi', 'ProdukController@konfirmasi');
 Route::put('/admin/produk/{id}', 'ProdukController@update');
 Route::delete('/admin/produk/{detail}/{id}', 'ProdukController@destroy');
+
+Route::get('/admin/blog', 'BlogController@index')->name('blog');

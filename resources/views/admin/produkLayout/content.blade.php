@@ -5,11 +5,11 @@
     @include('admin.produkLayout.contents.tabel_kategori')
 </div>
 
-<!-- modal Form Produk -->
+<!-- modal Form tambah Produk -->
   @include('admin.produkLayout.contents.form_produk')
-<!-- modal Form kategori -->
+<!-- modal Form tambah kategori -->
 @include('admin.produkLayout.contents.form_kategori')
-<!-- modal Form hapus -->
+<!-- modal Form hapus produk -->
 @if ($hapusProduk= Session::get('hapusProduk'))
   @include('admin.produkLayout.contents.hapus_produk')
 @endif
