@@ -29,7 +29,7 @@
                 <tr>
                     <td> {{$noProduk++}} </td>
                     <td> {{$dataProduk->nama_produk}} </td>
-                    <td> {{$dataProduk->nama_kategori}}</td>
+                    <td> {{$dataProduk->id_kategori}}</td>
                     <td>  
                       <a href="produk/{{$dataProduk->id}}">
                         <button type="button" class="btn btn-info">Detail</button>

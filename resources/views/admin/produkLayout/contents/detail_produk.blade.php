@@ -8,7 +8,7 @@
         <div class="modal-body">
 <div class="box box-primary">
     <div class="box-body box-profile">
-      <img class="profile-user-img img-responsive img-circle" src="{{ asset("image/user2-160x160.jpg")}}" alt="User profile picture">
+      <img class="profile-user-img img-responsive img-circle" src="{{ asset("storage/imagesUpload/$detailProduk->image")}}" alt="User profile picture">
 
       <h3 class="profile-username text-center"> {{$detailProduk->nama_produk}}</h3>
 

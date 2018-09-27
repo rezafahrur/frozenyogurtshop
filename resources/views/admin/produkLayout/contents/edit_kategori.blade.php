@@ -15,6 +15,14 @@
                    <input type="text" name="namaKategori" class="form-control" id="editNamaKategori" value="{{$editKategori->nama_kategori}}">
                  </div>
                </div>
+               <div class="form-group">
+                <label for="inputDetailKategori" class="col-sm-2 control-label">Detail Kategori</label>
+                <div class="col-sm-10">
+                    <textarea id="detailKategoriEdit" name="detailKategori">
+                      {{$editKategori->detail_kategori}}
+                    </textarea>
+                </div>
+              </div>
              </div> <!--- /.modal body -->
              <div class="modal-footer">
                <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>

@@ -6,7 +6,7 @@
           <h4 class="modal-title">Tambah Data Produk</h4>
         </div>
         <div class="modal-body">
-         <form action="produk" method="post" class="form-horizontal">
+         <form action="produk" method="post" class="form-horizontal" enctype="multipart/form-data">
            @csrf
            <input type="hidden" name="jenisForm" value="produk">
           <div class="form-group">
@@ -18,7 +18,7 @@
           <div class="form-group">
             <label for="inputGambar" class="col-sm-2 control-label">Gambar</label>
             <div class="col-sm-10">
-              <input type="text" name="image" class="form-control" id="inputGambar" placeholder="Ini Gambar">
+              <input type="file" name="image" class="form-control" id="inputGambar">
             </div>
           </div>
           <div class="form-group">

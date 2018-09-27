@@ -9,6 +9,7 @@ trait ProdukTrait {
 
   public function tampilDataProdukTrait() {
     $produk = Produk::orderBy('id','desc')->get();
+    
     return $produk;
   }
 
@@ -29,10 +30,10 @@ trait ProdukTrait {
         return $produk;
   }
 
-  public function tambahDataProdukTrait($request) {
+  public function tambahDataProdukTrait($request, $filename) {
     $produk = new Produk;
     $produk->nama_produk = $request->namaProduk;
-    $produk->image = $request->image;
+    $produk->image = $filename;
     $produk->id_kategori = $request->idKategori;
 
     $produk->save();

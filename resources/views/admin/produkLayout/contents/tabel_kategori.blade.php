@@ -27,10 +27,10 @@
                     <td> {{$noKategori++}} </td>
                     <td> {{$dataKategori->nama_kategori}} </td>
                     <td> 
-                        <a href="buku/{{ $detail = "kategori" }}/{{$dataKategori->id}}/edit">
+                        <a href="produk/{{ $detail = "kategori" }}/{{$dataKategori->id}}/edit">
                             <button type="button" class="btn btn-warning">Ubah</button>
                           </a>
-                          <a href="buku/{{ $detail = "kategori" }}/{{$dataKategori->id}}/konfirmasi">
+                          <a href="produk/{{ $detail = "kategori" }}/{{$dataKategori->id}}/konfirmasi">
                               <button type="button" class="btn btn-danger">Hapus</button>
                             </a>
                       

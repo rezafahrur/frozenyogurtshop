@@ -34,8 +34,16 @@ class ProdukController extends Controller
             return redirect()->route('produk')->with('successKategori', 'kategori ditambah');
         }
         if($request->jenisForm == "produk"){
-            $this->tambahDataProdukTrait($request);
-            return redirect()->route('produk')->with('successProduk', 'produk ditambah');
+
+            if($request->hasFile('image')) {
+                $filename = $request->image->getClientOriginalName();
+                $request->image->storeAs('public/imagesUpload', $filename);
+                $this->tambahDataProdukTrait($request, $filename);
+                return redirect()->route('produk')->with('successProduk', 'produk ditambah');
+            }
+            else {
+                dd($request);
+            }
         }
     }
 

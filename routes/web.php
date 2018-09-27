@@ -15,10 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/produk', 'ProdukController@index')->name('produk');
-Route::post('/produk', 'ProdukController@store');
-Route::get('produk/{id}', 'ProdukController@show');
-Route::get('/produk/{detail}/{id}/edit', 'ProdukController@edit');
-Route::get('/produk/{detail}/{id}/konfirmasi', 'ProdukController@konfirmasi');
-Route::put('/produk/{id}', 'ProdukController@update');
-Route::delete('/produk/{detail}/{id}', 'ProdukController@destroy');
+Route::get('/admin/produk', 'ProdukController@index')->name('produk');
+Route::post('/admin/produk', 'ProdukController@store');
+Route::get('/admin/produk/{id}', 'ProdukController@show');
+Route::get('/admin/produk/{detail}/{id}/edit', 'ProdukController@edit');
+Route::get('/admin/produk/{detail}/{id}/konfirmasi', 'ProdukController@konfirmasi');
+Route::put('/admin/produk/{id}', 'ProdukController@update');
+Route::delete('/admin/produk/{detail}/{id}', 'ProdukController@destroy');

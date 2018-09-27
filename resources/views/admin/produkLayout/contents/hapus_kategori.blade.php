@@ -15,7 +15,7 @@
           <button type="button" class="btn btn-default" data-dismiss="modal">Tidak</button>
         </div>
         <div class="col-md-1">
-          <form action="buku/kategori/{{ $hapusKategori->id }}" method="post">
+          <form action="produk/kategori/{{ $hapusKategori->id }}" method="post">
             @csrf
             <button type="submit" class="btn btn-danger">Hapus</button>
                 <input type="hidden" name="_method" value="DELETE">
