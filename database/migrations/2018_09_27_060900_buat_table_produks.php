@@ -16,7 +16,7 @@ class BuatTableProduks extends Migration
         Schema::create('produks', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nama_produk');
-            $table->string('image');
+            $table->string('image')->nullable();
             $table->unsignedInteger('id_kategori');
             $table->foreign('id_kategori')
                   ->references('id')

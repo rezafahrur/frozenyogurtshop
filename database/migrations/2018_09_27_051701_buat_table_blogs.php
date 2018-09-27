@@ -16,7 +16,7 @@ class BuatTableBlogs extends Migration
         Schema::create('blogs', function (Blueprint $table) {
             $table->increments('id');
             $table->string('judul');
-            $table->string('image');
+            $table->string('image')->nullable();
             $table->longText('isi');
             $table->timestamps();
         });
