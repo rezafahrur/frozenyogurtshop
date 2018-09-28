@@ -3,5 +3,5 @@
     <a href="http://freewebsitetemplates.com/go/twitter/" class="twitter">twitter</a>
     <a href="http://freewebsitetemplates.com/go/googleplus/" class="googleplus">googleplus</a>
     <a href="http://pinterest.com/fwtemplates/" class="pinterest">pinterest</a>
-  </div>
-  <p>&copy; 2023 Freeeze. All Rights Reserved.</p>
+</div>
+<p>&copy; 2023 Freeeze. All Rights Reserved.</p>

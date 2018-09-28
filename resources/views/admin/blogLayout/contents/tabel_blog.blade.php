@@ -24,12 +24,12 @@
                         </tr>
                     </thead>
                     <tbody>
-                     @foreach ($dataBlogs as $dataBlog)
+                        @foreach ($dataBlogs as $dataBlog)
                         <tr>
                             <td> {{$noBlog++}} </td>
                             <td> {{$dataBlog->judul}} </td>
                             <td>
-                                    {!! PotongString::potong($dataBlog->isi, 100) !!}
+                                {!! PotongString::potong($dataBlog->isi, 100) !!}
                             </td>
                             <td>
                                 <a href="#" target="_blank">
