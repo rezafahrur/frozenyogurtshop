@@ -32,7 +32,7 @@
 						<a href="contact">Contact</a>
           </li>
           <li>
-            <a href="admin/produk">Admin</a>
+            <a href="admin/produk" target="_blank">Admin</a>
           </li>
 				</ul>
 			</div>

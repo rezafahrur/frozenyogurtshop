@@ -11,6 +11,14 @@ trait PostTrait {
     return $blog;
   }
 
+  public function tampilDataPostSkipTrait(){
+    $blog = Blog::orderBy('id','desc')->get();
+    $blog->shift(); //ambil data pertama
+
+    $newBlog = $blog->all(); //simpan lainnya
+    return $newBlog;
+  }
+
   public function tampilRecentPostTrait() {
     $blog = Blog::orderBy('id','desc')->first();
     return $blog;

@@ -29,7 +29,7 @@
                             <td> {{$noBlog++}} </td>
                             <td> {{$dataBlog->judul}} </td>
                             <td>
-                                    {!! PotongString::potong($dataBlog->isi, 120) !!}
+                                    {!! PotongString::potong($dataBlog->isi, 100) !!}
                             </td>
                             <td>
                                 <a href="#" target="_blank">

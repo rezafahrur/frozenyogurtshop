@@ -26,7 +26,10 @@ Route::get('/contact', function () {
 Route::get('/product', 'WebsiteController@showProducts');
 
 //web blog
+Route::get('/blog', 'WebsiteController@showBlogs');
 
+//single post
+Route::get('/blog/{id}', 'WebsiteController@showPost');
 
 //admin product
 Route::get('/admin/produk', 'ProdukController@index')->name('produk');

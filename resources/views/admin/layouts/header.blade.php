@@ -1,6 +1,6 @@
 <!-- Main Header -->
 <header class="main-header blur">
-    <a href="#" class="logo">
+    <a href="/" class="logo" target="_blank">
         <!-- mini logo for sidebar mini 50x50 pixels -->
         <span class="logo-mini"><b>F</b>Y</span>
         <!-- logo for regular state and mobile devices -->
