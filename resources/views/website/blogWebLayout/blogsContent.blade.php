@@ -6,7 +6,14 @@
                 <img src="{{ asset("storage/imagesUpload/$dataBlog->image")}}" alt="">
                 <div>
                     <h1>{{ $dataBlog->judul }}</h1>
-                    <span>By Admin on {{$dataBlog->created_at}} </span>
+                    <span>
+                       By Admin on 
+                       <!-- call helper format bulan -->
+                       {{ FormatBulan::format($dataBlog->created_at->format('m')) }}
+                       {{$dataBlog->created_at->format('d')}}, 
+                       {{$dataBlog->created_at->format('Y')}}  
+                    </span>
+                    <!-- call helper potong string -->
                     <p> {!! PotongString::potong($dataBlog->isi, 150) !!} </p>
                     <a href="/blog/{{$dataBlog->id}}" class="more">Read More</a>
                 </div>
@@ -19,7 +26,13 @@
         <h1>Recent Posts</h1>
         <img src="{{ asset("storage/imagesUpload/$recentPost->image") }}" alt="">
         <h2> {{$recentPost->judul}} </h2>
-        <span>By Admin on {{$recentPost->created_at }} </span>
+        <span>By Admin on 
+            <!-- call helper format bulan -->
+            {{ FormatBulan::format($recentPost->created_at->format('m')) }}
+            {{$recentPost->created_at->format('d')}}, 
+            {{$recentPost->created_at->format('Y')}} 
+        </span>
+        <!-- call helper potong string -->
         <p>{!! PotongString::potong($recentPost->isi, 150) !!}</p>
         <a href="/blog/{{$recentPost->id}}" class="more">Read More</a>
     </div>

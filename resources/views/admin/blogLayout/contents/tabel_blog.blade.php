@@ -29,6 +29,7 @@
                             <td> {{$noBlog++}} </td>
                             <td> {{$dataBlog->judul}} </td>
                             <td>
+                                <!-- call helper potong string -->
                                 {!! PotongString::potong($dataBlog->isi, 100) !!}
                             </td>
                             <td>
