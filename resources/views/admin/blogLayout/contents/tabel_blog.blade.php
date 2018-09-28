@@ -2,7 +2,7 @@
 <div id="dataTabelProduk" class="col-md-12">
     <div class="box box-success box-solid">
         <div class="box-header with-border">
-            <h3 class="box-title">Data Blog</h3>
+            <h3 class="box-title">Data Posting Blog</h3>
 
             <div class="box-tools pull-right">
                 <button id="maxBlog" type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>

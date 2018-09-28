@@ -2,7 +2,7 @@
 <div id="dataTabelProduk" class="col-md-12">
     <div class="box box-success collapsed-box">
         <div class="box-header with-border">
-            <h3 class="box-title">Form Tambah Blog</h3>
+            <h3 class="box-title">Form Tambah Posting</h3>
 
             <div class="box-tools pull-right">
                 <button id="maxBlog" type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-plus"></i>

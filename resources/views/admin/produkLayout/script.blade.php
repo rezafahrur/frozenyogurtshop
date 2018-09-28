@@ -74,3 +74,7 @@
 @if (Session::get('hapusKategori') == true)
 <script src="{{ asset("/js/produk/hapusKategori.js") }}"></script>
 @endif
+
+@if (Session::get('salah') == true)
+<script src="{{ asset("/js/salah.js") }}"></script>
+@endif

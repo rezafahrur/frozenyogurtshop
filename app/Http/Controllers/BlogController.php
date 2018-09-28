@@ -30,8 +30,7 @@ class BlogController extends Controller
                 return redirect()->route('blog')->with('successBlog', 'blog ditambah');
             }
             else {
-                //dd($request);
-                echo "salah";
+                return redirect()->route('blog')->with('salah', 'gagal di tambah');
             }
         
     }
@@ -48,14 +47,13 @@ class BlogController extends Controller
             if($request->hasFile('editImage')) {
                 $filename = $request->editImage->getClientOriginalName();
                 $request->editImage->storeAs('public/imagesUpload', $filename);
-                $this->UpdateDataPostTrait($request, $id, $filename);
-                return redirect()->route('blog')->with('successUpdateBlog', 'blog diubah');
             }
             else {
-                dd($request);
-               // echo "salah";
+                $filename = $request->prevImage;
             }
-        
+
+        $this->UpdateDataPostTrait($request, $id, $filename);
+        return redirect()->route('blog')->with('successUpdateBlog', 'blog diubah');
     }
 
     public function destroy($id){
@@ -64,11 +62,6 @@ class BlogController extends Controller
         
     }
 
-    // public function show($id){
-    //     $detailBlog = $this->tampilDetailPostTrait($id);
-    //     return redirect()->route('blog')->with('detailBlog', $detailBlog);
-
-    // }
     
     public function konfirmasi($id){
         

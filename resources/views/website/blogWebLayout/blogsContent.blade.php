@@ -20,7 +20,7 @@
             </li>
             @endforeach
         </ul>
-        <a href="blog.html" class="load">Load More</a>
+        <a href="#" class="load">Load More</a>
     </div>
     <div class="sidebar">
         <h1>Recent Posts</h1>

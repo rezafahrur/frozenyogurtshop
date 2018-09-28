@@ -42,7 +42,7 @@ class ProdukController extends Controller
                 return redirect()->route('produk')->with('successProduk', 'produk ditambah');
             }
             else {
-                dd($request);
+                return redirect()->route('produk')->with('salah', 'gagal ditambah');
             }
         }
     }
@@ -67,12 +67,12 @@ class ProdukController extends Controller
             if($request->hasFile('editImage')) {
                 $filename = $request->editImage->getClientOriginalName();
                 $request->editImage->storeAs('public/imagesUpload', $filename);
-                $this->UpdateDataProdukTrait($request, $id, $filename);
-                return redirect()->route('produk')->with('successUpdateProduk', 'produk diubah');
             }
             else {
-                echo "salah";
+                $filename = $request->prevImage;
             }
+            $this->UpdateDataProdukTrait($request, $id, $filename);
+            return redirect()->route('produk')->with('successUpdateProduk', 'produk diubah');
         }
     }
 

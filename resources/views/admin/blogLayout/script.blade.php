@@ -59,3 +59,7 @@
 @if (Session::get('successDeleteBlog') == true)
 <script src="{{ asset("/js/blog/successDeleteBlog.js") }}"></script>
 @endif
+
+@if (Session::get('salah') == true)
+<script src="{{ asset("/js/salah.js") }}"></script>
+@endif

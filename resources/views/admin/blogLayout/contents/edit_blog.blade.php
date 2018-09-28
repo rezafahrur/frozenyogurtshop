@@ -26,6 +26,9 @@
                             <input type="file" name="editImage" class="form-control" id="editGambar">
                         </div>
                     </div>
+                    <!-- jika gambar kosong -->
+                    <input type="hidden" name="prevImage" value="{{ $editBlog->image }}">
+                    
                     <div class="form-group">
                         <label for="inputIsiBlog" class="col-sm-2 control-label">Isi</label>
                         <div class="col-sm-10">

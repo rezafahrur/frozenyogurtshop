@@ -5,9 +5,9 @@
         <span>
             By Admin on 
             <!-- call helper format bulan -->
-            {{ FormatBulan::format($dataBlog->created_at->format('m')) }}
-            {{$dataBlog->created_at->format('d')}}, 
-            {{$dataBlog->created_at->format('Y')}}
+            {{ FormatBulan::format($post->created_at->format('m')) }}
+            {{$post->created_at->format('d')}}, 
+            {{$post->created_at->format('Y')}}
         </span>
         <p> {!! $post->isi !!} </p>
         <a href="/blog" class="load">back to blog</a>
