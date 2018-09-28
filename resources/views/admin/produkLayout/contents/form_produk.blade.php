@@ -18,7 +18,7 @@
           <div class="form-group">
             <label for="inputGambar" class="col-sm-2 control-label">Gambar</label>
             <div class="col-sm-10">
-              <input type="file" name="image" class="form-control" id="inputGambar">
+              <input type="file" title="Masukkan Gambar" name="image" class="form-control" id="inputGambar">
             </div>
           </div>
           <div class="form-group">

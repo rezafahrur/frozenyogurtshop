@@ -37,4 +37,10 @@ Route::get('/admin/produk/{detail}/{id}/konfirmasi', 'ProdukController@konfirmas
 Route::put('/admin/produk/{id}', 'ProdukController@update');
 Route::delete('/admin/produk/{detail}/{id}', 'ProdukController@destroy');
 
+//admin blog post
 Route::get('/admin/blog', 'BlogController@index')->name('blog');
+Route::post('/admin/blog', 'BlogController@store');
+Route::get('/admin/blog/{id}/edit', 'BlogController@edit');
+Route::get('/admin/blog/{id}/konfirmasi', 'BlogController@konfirmasi');
+Route::put('/admin/blog/{id}', 'BlogController@update');
+Route::delete('/admin/blog/{id}', 'BlogController@destroy');

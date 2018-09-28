@@ -44,7 +44,7 @@
                       <a href="produk/{{ $detail = "produk" }}/{{$dataProduk->id}}/edit">
                           <button type="button" class="btn btn-primary">Edit</button>
                         </a>
-                        <a href="buku/{{ $detail = "produk" }}/{{$dataProduk->id}}/konfirmasi">
+                        <a href="produk/{{ $detail = "produk" }}/{{$dataProduk->id}}/konfirmasi">
                           <button type="button" class="btn btn-danger">Hapus</button>
                         </a>
                     
