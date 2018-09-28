@@ -5,5 +5,5 @@ products
 @endsection
 
 @section('content')
-    ini content
+    @include('website.produkWebLayout.productsContent')
 @endsection

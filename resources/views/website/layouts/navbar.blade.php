@@ -8,7 +8,7 @@
         <a href="about.html">About</a>
         <ul id="selected" class="primary">
           <li class="">
-            <a href="product.html">Product</a>
+            <a href="product">Product</a>
           </li>
         </ul>
       </li>

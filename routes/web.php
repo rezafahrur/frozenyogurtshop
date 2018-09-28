@@ -15,6 +15,9 @@ Route::get('/', function () {
     return view('website/produkWebLayout/produkWeb');
 });
 
+Route::get('/product', 'WebsiteController@showProducts');
+
+
 Route::get('/admin/produk', 'ProdukController@index')->name('produk');
 Route::post('/admin/produk', 'ProdukController@store');
 Route::get('/admin/produk/{id}', 'ProdukController@show');
