@@ -11,13 +11,24 @@
 |
 */
 
+//web statis
 Route::get('/', function () {
-    return view('website/produkWebLayout/produkWeb');
+    return view('website/home');
+});
+Route::get('/about', function () {
+    return view('website/about');
+});
+Route::get('/contact', function () {
+    return view('website/contact');
 });
 
+//web produk
 Route::get('/product', 'WebsiteController@showProducts');
 
+//web blog
 
+
+//admin product
 Route::get('/admin/produk', 'ProdukController@index')->name('produk');
 Route::post('/admin/produk', 'ProdukController@store');
 Route::get('/admin/produk/{id}', 'ProdukController@show');

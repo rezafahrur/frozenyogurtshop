@@ -11,7 +11,7 @@
 <body>
 	<div id="page">
 		<div id="header">
-			@include('website.layouts.navbar')
+			@yield('navbar')
 		</div>
 		<div id="body">
 			<div class="header">
